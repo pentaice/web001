@@ -39,7 +39,7 @@ html {
 #home img {
     max-width: 20rem;
     height: auto;
-    border-radius: 25%;  
+    border-radius: 100%;  
 }
 #home .name h3 {
     margin-bottom: 0.75rem;
