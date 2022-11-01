@@ -1,0 +1,37 @@
+/* bu dosyada genel olan şeyler olucak */
+
+/* text */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+.heading-medium {
+    font-size: 1.5rem;
+}
+.heading-big {
+    font-size: 1.75rem;
+}
+.text-micro {
+    font-size: 10px;
+}
+
+
+/* color */
+
+.bg-dark-blue {
+    background-color: #062e51;
+}
+.bg-light-blue {
+    background-color: #336ea2;
+}
+
+/* container */
+.container {
+    max-width: 900px;
+    margin: 0px auto;
+}
+

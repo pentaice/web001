@@ -1,0 +1,10 @@
+#navbar h1 small {
+font-size: 8px;
+}
+
+#bölümler .items {
+    flex-direction: column;
+}
+#bölümler .items .item {
+    width: 100%;
+}
