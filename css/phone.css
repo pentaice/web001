@@ -1,3 +1,10 @@
+#home .contact {
+    display: flex;
+    flex-direction: column;
+}
+#home .contact .acls {
+    margin: 0.25rem;
+}
 #navbar h1 small {
 font-size: 8px;
 }
