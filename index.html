@@ -22,65 +22,91 @@
     <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css">
     <link rel="stylesheet" media="(max-width:517px)" href="css/phone.css">
 
+    <script src="https://unpkg.com/scrollreveal"></script> <!--scrollreveal-->
+
 </head>
 
 <body>
     
+    <div id="home">
+        <div class="decode-text">
+            
+            <div class="text-animation">&lt;</div>
+            <div class="text-animation">E</div>
+            <div class="text-animation">m</div>
+            <div class="text-animation">r</div>
+            <div class="text-animation">e</div>
+            <div class="space"></div>
 
-    <header class="bg-dark-blue">
-
-        <div class="container">
-            <nav id="navbar">
-                <h1>Emre Akışık <small class="text-micro">this is my web site</small></h1>
-               <!-- icon ve resim gelecek -->
-               <img src="image/unnamed.jpg" alt="">
-            </nav>
+            <div class="text-animation">A</div>
+            <div class="text-animation">k</div>
+            <div class="text-animation">ı</div>
+            <div class="text-animation">ş</div>
+            <div class="text-animation">ı</div>
+            <div class="text-animation">k</div>
+            <div class="text-animation">&gt;</div>
+            <div class="space"></div>
         </div>
         
-    </header>
+        <a id="refresh" onclick="decodeText();">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+        </a>
+    </div>
 
-
-    <section id="home">
-        <img src="image/20221014_1303488.jpg" alt="Emre Akışık">
-        <div class="name text-center">
-            <h3>Emre Akışık</h3>
-            <p>Hacettepe Üniversitesi BÖTE 2. sınıf | Gitarla ilgileniyor</p>
+    <div>
+        <div class="grid-container">
+            <!-- Kart 1 -->
+            <div class="grid-item scrollReveal1 h1">
+                <img src="image/pPmain.jpg" alt="">
+            </div>
+            <div class="grid-item scrollReveal1 h2">
+            </div>
+            <div class="grid-item scrollReveal1 h3">
+            </div>
+            <div class="grid-item scrollReveal1 h4">
+            </div>
+            <div class="grid-item scrollReveal1 h5">
+                <a href="https://github.com/pentaice" target="_blank"><img src="image/github-logo.png" alt=""></a>
+            </div>
+            <div class="grid-item scrollReveal1 h6">
+            </div>
+            <div class="grid-item scrollReveal1 h7">
+            </div>
+            <div class="grid-item scrollReveal1 h8">
+            </div>
+            <div class="grid-item scrollReveal1 h9">
+                <a href="https://www.linkedin.com/in/emre-akışık-1865a2253/" target="_blank"><img src="image/linkedin.svg" alt=""></a>
+            </div>
+            <div class="grid-item scrollReveal2 h10">
+            </div>
+            <div class="grid-item scrollReveal1 h11">
+            </div>
+            <div class="grid-item scrollReveal1 h12">
+            </div>
+            <div class="grid-item scrollReveal1 h13">
+            </div>
+            <div class="grid-item scrollReveal1 h14">
+            </div>
         </div>
+    </div>
 
+    <footer>
+        <a href="">GitHub </a>
+        <a href=""> Linkedin</a>
+    </footer>
 
-        <div class="contact"> 
-            <a class="acls" href="mailto:emre.20.ak@hotmail.com" target="_blank"><i class="fa-regular fa-paper-plane"></i> Mail</a>
-            <a class="acls" href="https://www.instagram.com/emreywa/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i> İnstagram</a>
-            <a class="acls" href="#" target="_blank"><i class="fa-sharp fa-solid fa-file-pdf"></i> CV</a>
-        </div>
+    <script>
+    function randomizeHeights() {
+        const gridItems = document.querySelectorAll('.grid-item');
         
-    </section>
-
-
-    <section id="bölümler" class="bg-dark-blue">
-        <div class="items">
-            <article class="item">
-                <h3>Geçmiş</h3>
-                <p>Mehmet Cadıl Anadolu Lisesini bitirdi. Müzik alanında gitarla ilgili kayıtlar aldı.</p>
-            </article>
-            <article class="item">
-                <h3>Şimdi</h3>
-                <p>Hacettepe Üniversitesi Bilgisayar ve Eğitim Teknolojileri Eğitmenliği okuyor , 2. sınıf.</p>
-            </article>
-            <article class="item">
-                <h3>Gelecekte</h3>
-                <p>Öğretim Teknoloğu ve Program Yazılımcısı olarak çalışmayı planlıyor. Şarkı ve albüm yapmayı planlıyor. </p>
-            </article>
-        </div>
-    </section>
-
-
-    
-
+        gridItems.forEach(item => {
+            const randomHeight = Math.floor(Math.random() * (300 - 150 + 1)) + 150; // 150px - 300px arası rastgele yükseklik
+            item.style.height = randomHeight + 'px'; // Yüksekliği ayarla
+        });
+    }
+    </script>
 
     <!-- javascript -->
     <script src="proje.js"></script>
-
-
 </body>
 </html>
