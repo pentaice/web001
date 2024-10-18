@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    text-decoration-color: #333;
 }
 
 
@@ -139,6 +140,18 @@ html {
     background-color: #202020;
     min-height: 95vh;
 }
+
+.grid-container a{
+    text-decoration: none;
+    color: #ffffffa4;
+    transition-duration: 0.2s;
+}
+.grid-container a:hover{
+    color: #ffffff;
+}
+
+
+
 .grid-item {
     
     display: flex; /* Flexbox kullanımı */
@@ -158,7 +171,9 @@ html {
 
 .grid-item:hover{
     box-shadow: 0 0px 12px rgba(255, 255, 255, 0.232);
+    text-decoration-color: white;
 }
+
 
 .grid-item img{
     height: 150px;
@@ -177,16 +192,22 @@ html {
 @media (max-width: 1200px) {
     .grid-container {
         columns: 3;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 @media (max-width: 900px) {
     .grid-container {
         columns: 2;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 @media (max-width: 600px) {
     .grid-container {
         columns: 1;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
