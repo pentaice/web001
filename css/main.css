@@ -248,7 +248,7 @@ footer a{
     height: 200px;
 }
 .h4{
-    height: 65px;
+    height: 60px;
 }
 .h5{
     height: 300px;
@@ -266,19 +266,28 @@ footer a{
     height: 300px;
 }
 .h10{
-    height: 120px;
+    height: 110px;
 }
 .h11{
     height: 150px;
 }
+.h11 img{
+    height: 60px;
+}
+.h11 p{
+    margin-top: 15px;
+}
 .h12{
     height: 150px;
+}
+.h12 img{
+    height: 120px;
 }
 .h13{
     height: 50px;
 }
 .h14{
-    height: 105px;
+    height: 100px;
 }
 
 
@@ -287,6 +296,11 @@ footer a{
     width: 100%;
     font-size: 30px;
     text-align: center;
+  }
+  @media (max-width: 600px) {
+    .decode-text{
+        font-size: 20px;
+    }
   }
   .space {
     display: inline-block;
