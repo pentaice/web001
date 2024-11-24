@@ -342,3 +342,29 @@ footer a{
     div {
       font-family: "Share Tech Mono", monospace;
     }
+
+
+
+
+        /* scrolll */
+    #scrollToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        background-color: #00000060;
+        color: #ffffffae;
+        border: none;
+        border-radius: 10%;
+        cursor: pointer;
+        display: none; /* Varsayılan olarak gizli */
+        z-index: 1000;
+      }
+      
+      /* Telefon modunda görünsün */
+      @media screen and (max-width: 768px) {
+        #scrollToTop {
+          display: block;
+        }
+      }
+      

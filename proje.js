@@ -1,14 +1,24 @@
 ScrollReveal().reveal('.scrollReveal1',{delay:200});
 ScrollReveal().reveal('.scrollReveal2',{delay:400});
 
-function randomizeHeights() {
-    const gridItems = document.querySelectorAll('.grid-item');
-    
-    gridItems.forEach(item => {
-        const randomHeight = Math.floor(Math.random() * (300 - 150 + 1)) + 150; // 150px - 300px arası rastgele yükseklik
-        item.style.height = randomHeight + 'px'; // Yüksekliği ayarla
+// Scroll'u izlemek için event listener
+window.onscroll = function () {
+    const button = document.getElementById("scrollToTop");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  };
+  
+  // Yukarı çıkma fonksiyonu
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
-}
+  }
+  
 
 
 /* ------------------------------------------------------------------------ *  
