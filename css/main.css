@@ -359,6 +359,7 @@ footer a{
         cursor: pointer;
         display: none; /* Varsayılan olarak gizli */
         z-index: 1000;
+        transition-duration: 0.8s;
       }
       
       /* Telefon modunda görünsün */
